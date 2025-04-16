@@ -1,0 +1,19 @@
+server:
+  port: 4000
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+  main:
+    banner-mode: off
+mcp:
+  server:
+    sse-url: http://localhost:3002/sse
+zhipu-ai:
+  api-key: <api-key>
+  model: glm-4-plus
+
+logging:
+  file:
+    name: ./logs/info.log
