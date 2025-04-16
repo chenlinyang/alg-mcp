@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## Getting Started
 
 **Algorithmic Learning Graybeard - 星星点灯，基于MCP协议实现智能查询。**
@@ -103,7 +102,3 @@ zhipu-ai:
   api-key: <api-key>
   model: <model>
 ```
-=======
-# alg-mcp
-Enabling intelligent querying based on the MCP protocol.
->>>>>>> bf31d2982387891af15080aad63a3f020ed6de90
