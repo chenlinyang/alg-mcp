@@ -10,6 +10,9 @@
 ## 系统组成及文档
 
 [中文文档](README.md) | [English](README_en.md)
+<br>
+<br>
+> 👉代码地址：[github](https://github.com/chenlinyang/alg-mcp) 或 [gitee](https://gitee.com/chenlinyang/alg-mcp)
 
 参考架构：
 - [Claude MCP协议](https://www.claudemcp.com/specification)

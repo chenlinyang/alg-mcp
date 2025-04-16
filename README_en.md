@@ -10,6 +10,9 @@ This framework can assist enterprises/teams in conducting technology research an
 ## System Composition and Documentation
 
 [Chinese](README.md) | [English](README_en.md)
+<br>
+<br>
+> 👉Resources repository:[github](https://github.com/chenlinyang/alg-mcp) or [gitee](https://gitee.com/chenlinyang/alg-mcp)
 
 Reference Architecture:
 - [Claude MCP Protocol](https://www.claudemcp.com/specification)
