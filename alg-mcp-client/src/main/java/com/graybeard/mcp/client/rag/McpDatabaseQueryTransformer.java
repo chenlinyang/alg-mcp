@@ -182,7 +182,7 @@ public class McpDatabaseQueryTransformer implements QueryTransformer {
             } else if (statement instanceof Update || statement instanceof Insert || statement instanceof Delete) {
                 return "OPERATION";
             } else if (statement instanceof CreateTable/* || statement instanceof Drop*/) {
-                return "CREATE";
+                return "CREATETBL";
             } else {
                 return "unknow";
             }
@@ -195,13 +195,13 @@ public class McpDatabaseQueryTransformer implements QueryTransformer {
     private static String format(String sqlQuery, String sqlType) {
         switch (sqlType) {
             case "QUERY":
-                return String.format("Execute a SELECT query on the jdbc database':\n%s", sqlQuery);
+                return String.format("Execute a SELECT query on the jdbc database:\n%s", sqlQuery);
             case "OPERATION":
-                return String.format("Execute a INSERT, UPDATE or DELETE query on the jdbc database':\n%s", sqlQuery);
-            case "CREATE":
-                return String.format("Create new table in the jdbc database':\n%s", sqlQuery);
+                return String.format("Execute a INSERT, UPDATE or DELETE query on the jdbc database:\n%s", sqlQuery);
+            case "CREATETBL":
+                return String.format("Create new table in the jdbc database:\n%s", sqlQuery);
             default:
-               return "";
+               return String.format("You are an expert in SQL analysis:\n%s", sqlQuery);
         }
     }
 

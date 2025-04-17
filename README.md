@@ -1,9 +1,8 @@
 ## Getting Started
 
-**Algorithmic Learning Graybeard - 星星点灯，基于MCP协议实现智能查询。**
+**Algorithmic Learning Graybeard - 星星点灯，基于RAG+MCP双引擎架构实现智能查询。**
 
- *基于智能AI系统构建RAG-MCP全流程闭环，依托MCP Server数据库的实时数据融合与语义索引能力，通过MCP协议实现自然语言到结构化查询的智能转换。
- 可用于辅助企业/团队进行技术研发、产品设计等支撑等工作。*
+ *在大语言模型（LLM）的基石上，依托MCP Server对数据库的数据融合与语义索引能力，构建RAG与MCP协同的双引擎架构，通过智能语法解析与查询映射，实现自然语言到结构化查询的精准转换，形成完整的技术链路闭环。可用于辅助企业/团队进行技术研发、产品设计等支撑工作。*
 
 > **🌟该项目如对您有帮助，欢迎点赞🌟**
 
@@ -12,9 +11,10 @@
 [中文文档](README.md) | [English](README_en.md)
 <br>
 <br>
+
 > 👉代码地址：[github](https://github.com/chenlinyang/alg-mcp) 或 [gitee](https://gitee.com/chenlinyang/alg-mcp)
 
-参考架构：
+架构参考：
 - [Claude MCP协议](https://www.claudemcp.com/specification)
 
 - [MCP SDK介绍](https://modelcontextprotocol.io/introduction)
@@ -39,23 +39,24 @@ http://localhost:4000/
 - 数据库操作
 ![本地路径](./images/mcp_database.png "数据库操作")
 
-## 示例接入的模型：
+## 接入的模型
+
 * Zhipu-AI
 
 * 也可以根据个人喜好接入其他模型：<br>
-DeepSeek、ChatGPT 3.5、通义千问、文心一言、ollama
+支持DeepSeek、ChatGPT 3.5、通义千问、文心一言、Ollama等
 
 ## 技术栈
 
 该仓库为后端服务
 
-MCP 技术栈：
+技术栈：
 
-* jdk17
+* jdk 17
 * springboot 3.4.4
 * [langchain4j 1.0.0-beta3](https://github.com/langchain4j/langchain4j)
-* **mcp-server** 利用自定义注解，实现MCP协议：<br>
-initialize、tools/call、tools/list、notifications/initialized、prompts/list、prompts/get 
+* **mcp-server** 利用自定义注解，实现MCP协议。已完成的接口有：<br>
+initialize、tools/call、tools/list、notifications/initialized、prompts/list、prompts/get等
 * **mcp-client** 使用RAG自定义QueryTransformer，读取MCP server prompt实现NPL2SQL功能
 
 ## 如何运行
@@ -74,6 +75,9 @@ spring:
     username: <username>
     password: <password>
 ```
+
+* 支持PostgreSQL、Oracle、SQLServer、H2等关系型数据库<br>
+配置参考：[spring-boot-data-jdbc](https://docs.spring.io/spring-boot/docs/current/reference/html/data.html#data.sql.jdbc)
 
 **b. 配置第三方天气API**
 * 申请和风天气的API-KEY和API-HOST<br>
