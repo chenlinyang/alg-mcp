@@ -1,6 +1,6 @@
 ## Getting Started
 
-**Algorithmic Learning Graybeard - Stars Lighting,enabling intelligent querying based on the RAG+MCP dual-engine architecture.**
+**Algorithmic Learning Graybeard - Stars Lighting, enabling intelligent querying based on the RAG+MCP dual-engine architecture.**
 
 *Building upon the foundation of Large Language Models (LLMs) and leveraging the MCP Server's capabilities in database data fusion and semantic indexing, we establish a dual-engine architecture with synergistic RAG-MCP collaboration. Through intelligent syntax parsing and query mapping, this system achieves precise conversion from natural language to structured queries, ultimately forming a closed-loop technical framework.
 It can be used to assist enterprises/teams in technical research and development, product design, etc.*
@@ -11,8 +11,9 @@ It can be used to assist enterprises/teams in technical research and development
 
 [Chinese](README.md) | [English](README_en.md)
 <br>
-<br>
 > 👉Resources repository: [github](https://github.com/chenlinyang/alg-mcp) or [gitee](https://gitee.com/chenlinyang/alg-mcp)
+
+If you have thousands of data catalogs and hundreds of millions of data facts, you can extend and optimize this project for enhanced data retrieval or analytics capabilities.
 
 Architecture Reference:
 - [Claude MCP Protocol](https://www.claudemcp.com/specification)
@@ -31,13 +32,21 @@ Architecture Reference:
 ## Features
 
 * MCP server
+
 * MCP client
+
 * Chat demo URL:<br>
   http://localhost:4000/
+
 - Weather Retrieval
-  ![本地路径](./images/mcp_weather.png "Weather Retrieva")
-- Database Operation
-  ![本地路径](./images/mcp_database.png "Database Operation")
+> Open API Interoperability
+
+![本地路径](./images/mcp_weather.png "Weather Retrieva")
+
+- Database Operations
+> Achieve seamless data aggregation, ranking, and stratified sampling in one SQL execution
+
+[本地路径](./images/mcp_database.png "Database Operation")
 
 ## Connected LLM
 * Zhipu-AI
