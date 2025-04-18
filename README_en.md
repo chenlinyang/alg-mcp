@@ -46,7 +46,7 @@ Architecture Reference:
 - Database Operations
 > Achieve seamless data aggregation, ranking, and stratified sampling in one SQL execution
 
-[本地路径](./images/mcp_database.png "Database Operation")
+![本地路径](./images/mcp_database.png "Database Operation")
 
 ## Connected LLM
 * Zhipu-AI
